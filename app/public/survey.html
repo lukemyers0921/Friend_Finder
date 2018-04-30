@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <style>
+        h4 {
+            color: white;
+            background-color: #ffc107;
+            margin-bottom: 0;
+        }
+
+        form {
+            border: #ffc107 3px solid;
+            text-align: center;
+        }
+
+        input {
+            margin-right: 10px;
+        }
+
+        h2 {
+            color: #ffc107;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        .bad {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Survey Questions</h2>
+        <div>
+            <h3 class="bad"></h3>
+            <h4>Name (Required)</h4>
+            <input type="text" id="name" class="form-control" required>
+        </div>
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+
+        <hr>
+        <span>
+            <h4>1. Your mind is always buzzing with unexplored ideas and plans.</h4>
+        </span>
+        <form id="q1">
+            <label class="radio">
+                <input type="radio" name="ques1" value="1">Strongly Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques1" value="2">Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques1" value="3">Neutral |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques1" value="4">Agree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques1" value="5">Strongly Agree
+            </label>
+        </form>
+        <br>
+        <span>
+            <h4>2. Generally speaking, you rely more on your experience than your imagination.</h4>
+        </span>
+        <form id="q2">
+            <label class="radio">
+                <input type="radio" name="ques2" value="1">Strongly Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques2" value="2">Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques2" value="3">Neutral |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques2" value="4">Agree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques2" value="5">Strongly Agree
+            </label>
+        </form>
+        <br>
+        <span>
+            <h4>3. You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        </span>
+        <form id="q3">
+            <label class="radio">
+                <input type="radio" name="ques3" value="1">Strongly Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques3" value="2">Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques3" value="3">Neutral |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques3" value="4">Agree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques3" value="5">Strongly Agree
+            </label>
+        </form>
+        <br>
+        <span>
+            <h4>4. You rarely do something just out of sheer curiosity.</h4>
+        </span>
+        <form id="q4">
+            <label class="radio">
+                <input type="radio" name="ques4" value="1">Strongly Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques4" value="2">Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques4" value="3">Neutral |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques4" value="4">Agree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques4" value="5">Strongly Agree
+            </label>
+        </form>
+        <br>
+        <span>
+            <h4>5. People can rarely upset you.</h4>
+        </span>
+        <form id="q5">
+            <label class="radio">
+                <input type="radio" name="ques5" value="1">Strongly Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques5" value="2">Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques5" value="3">Neutral |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques5" value="4">Agree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques5" value="5">Strongly Agree
+            </label>
+        </form>
+        <br>
+        <span>
+            <h4>6. Your mind is always buzzing with unexplored ideas and plans.</h4>
+        </span>
+        <form id="q6">
+            <label class="radio">
+                <input type="radio" name="ques6" value="1">Strongly Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques6" value="2">Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques6" value="3">Neutral |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques6" value="4">Agree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques6" value="5">Strongly Agree
+            </label>
+        </form>
+        <br>
+        <span>
+            <h4>7. Generally speaking, you rely more on your experience than your imagination.</h4>
+        </span>
+        <form id="q7">
+            <label class="radio">
+                <input type="radio" name="ques7" value="1">Strongly Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques7" value="2">Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques7" value="3">Neutral |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques7" value="4">Agree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques7" value="5">Strongly Agree
+            </label>
+        </form>
+        <br>
+        <span>
+            <h4>8. You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        </span>
+        <form id="q8">
+            <label class="radio">
+                <input type="radio" name="ques8" value="1">Strongly Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques8" value="2">Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques8" value="3">Neutral |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques8" value="4">Agree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques8" value="5">Strongly Agree
+            </label>
+        </form>
+        <br>
+        <span>
+            <h4>9. You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        </span>
+        <form id="q9">
+            <label class="radio">
+                <input type="radio" name="ques9" value="1">Strongly Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques9" value="2">Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques9" value="3">Neutral |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques9" value="4">Agree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques9" value="5">Strongly Agree
+            </label>
+        </form>
+        <br>
+        <span>
+            <h4>10. You rarely do something just out of sheer curiosity.</h4>
+        </span>
+        <form id="q10">
+            <label class="radio">
+                <input type="radio" name="ques10" value="1">Strongly Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques10" value="2">Disagree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques10" value="3">Neutral |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques10" value="4">Agree |
+            </label>
+            <label class="radio">
+                <input type="radio" name="ques10" value="5">Strongly Agree
+            </label>
+        </form>
+        <br>
+        <h3 class="bad"></h3>
+
+        <button type="submit" class="btn btn-warning text-white btn-lg btn-block" id="submit">
+            Submit</button>
+
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends List</a> |
+                    <a href="https://github.com/lukemyers0921/Friend_Finder">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Your Match!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <div class="container-fluid">
+                        <div class="row">
+                                <div class="col-xs-12"><h3 id = "matchName"></h3></div>
+                                <div class="col-xs-12 "><img src="" alt="Profile Pic" id = "matchPhoto" width="360" height="230"></div>
+                                
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            $(".bad").hide();
+            var truthy = true;
+            for (i = 1; i < 11; i++) {
+                var idGrab = "ques" + i
+                boom = $(`input[name="${idGrab}"]:checked`).val();
+                if (!boom) {
+                    truthy = false;
+                }
+            }
+            if ($("#name").val() == "" || $("#photo").val() == "") {
+                truthy = false;
+            }
+            if (truthy) {
+                var newUser = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [$("input[name=ques1]:checked").val(), $("input[name=ques2]:checked").val(), $(
+                        "input[name=ques3]:checked").val(), $("input[name=ques4]:checked").val(), $(
+                        "input[name=ques5]:checked").val(), $("input[name=ques6]:checked").val(), $(
+                        "input[name=ques7]:checked").val(), $("input[name=ques8]:checked").val(), $(
+                        "input[name=ques9]:checked").val(), $("input[name=ques10]:checked").val(), ]
+                };
+                $.post("/api/friends", newUser, function (data) {
+
+                    $("#exampleModalCenter").modal("toggle");
+                    $("#matchName").text(data.name);
+                    $("#matchPhoto").attr("src",data.photo);
+
+                });
+            } else {
+                $(".bad").show();
+                $(".bad").text("ERROR All fields are requried!");
+            }
+        });
+    </script>
+</body>
