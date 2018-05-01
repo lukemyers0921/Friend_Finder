@@ -1,5 +1,5 @@
 {
-  "name": "Friend_Finder",
+  "name": "friend_finder",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,21 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lukemyers0921/Friend_Finder"
+    "url": "git+https://github.com/lukemyers0921/Friend_Finder.git"
   },
-  "author": "Luke Myers",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lukemyers0921/Friend_Finder/issues"
   },
-  "homepage": "https://github.com/lukemyers0921/Friend_Finder/",
+  "homepage": "https://github.com/lukemyers0921/Friend_Finder#readme",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "mysql": "^2.11.1",
-    "path": "^0.12.7"
-  },
-  "engines": {
-    "node": "6.11.1"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
   }
 }
