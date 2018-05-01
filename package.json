@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lukemyers0921/friend_finder"
+    "url": "https://github.com/lukemyers0921/Friend_Finder"
   },
   "author": "Luke Myers",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lukemyers0921/friend_finder/issues"
+    "url": "https://github.com/lukemyers0921/Friend_Finder/issues"
   },
-  "homepage": "https://github.com/lukemyers0921/friend_finder/",
+  "homepage": "https://github.com/lukemyers0921/Friend_Finder/",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
